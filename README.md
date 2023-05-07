@@ -5,12 +5,16 @@
 
 🏺 "Elemental_Play" Folder Has All Code For Elemental Play Website Inside.
 
-✔️  Signup For Github To Interact, Upload, Comment etc.. With Project
+✔️ Signup For Github To Interact, Upload, Comment etc.. With Project
+
+🛎️ Remember Upload Files & Folders Ya Gotta Be SIGNED IN 1st, Go To "Add file" In Folder
 
 📸 Any Images You Have For Your Project Please Upload Them In "images" Folder.
+👉🏽 1️: Add images go to "Add File" tab,  Viola'
+👉🏽 2️: *please label files especially if its just random numbers lol*
 
-✏️ Text You Want In Certain Areas U Can Say In Comments, 
-    1️: What You'd Like Written & Where
+✏️ Literature You Want In Certain Areas U Can Say In Comments, 
+    1️: What You'd Like Written & Where etc..
     2️: Below Is Page Directory
     3️: Just Go To The Github Repo, And Comment In Comment Section
 
