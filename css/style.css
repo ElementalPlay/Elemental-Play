@@ -14,6 +14,30 @@ body, html{
 body{
     background-color:#dda0dd;
     margin: 0 auto;
+    padding: 0;
+}
+/**
+section{
+    max-width:1200px;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}**/
+
+.main_wrapper{
+    max-width:900px;
+    max-height: 100%;
+    grid-template-columns: repeat(1, minmax(65px, auto));
+    grid-template-rows:auto;
+    margin: 0 auto;
+    padding: 2%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #ed0eed;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0 0 20px black;
 }
 
 /*****Header Sits Up Top & Holds Nav & H1*******/
@@ -22,10 +46,11 @@ header{
     max-width: 100%;
     max-height: 100%;
     grid-template-columns: repeat(1, minmax(65px, auto));
-    grid-template-rows: 110px 100px auto;
+    grid-template-rows:120px;
     grid-gap: 2%;
     text-align: center;
     margin: 0 auto;
+    
 }
 
 header p, h1{
@@ -34,15 +59,25 @@ header p, h1{
     align-content: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 2px;
+    
 }
 
+p{
+    font-size: 20px;
+	text-indent: 17px;
+	line-height: 35px;
+    font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+    margin-bottom: 8px;   
+}
+
+/***Large Text At Top With Company Name******/
 h1{
     width: 100%;
     height: 100%;
-    color: #ddd;
+    color: #5E285E;;
     font-family: 18thcentury;
-    font-size: 4.5rem;
+    font-size: 3rem;
     padding-left: 3px;
     padding-right: 3px;
     align-content: center;
@@ -55,9 +90,9 @@ h1{
 .nav{
     display: grid;
     width:100%;
-    height: 70px;
+    height:120px;
     grid-template-columns: repeat(auto-fit, minmax(65px, auto));
-    column-gap: 5%;
+    gap: 5%;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
@@ -70,7 +105,7 @@ h1{
 
 /*****/
 .nav a{
-    font-size: 32px;
+    font-size: 28px;
     color: #5E285E;
     margin: 0 auto;
     text-decoration: none;
@@ -93,6 +128,7 @@ nav p:hover{
 }**/
 
 /************/
+/******Nav Button Animation Start***********/
 nav p::after{
     content: '';
     position:aboslute;
@@ -103,16 +139,6 @@ nav p::after{
     background: #ea0e4b;
 }
 
-/**Animate Center Of Buttons**/
-/**
-nav p::after{
-    transform:scale(0,1);
-    transition: transform 0.3s ease;
-}
-
-nav p:hover::after{
-    transform: scale(1, 1);
-}**/
 
 /**Animate Left Of Buttons**/
 nav p::after{
@@ -125,11 +151,83 @@ nav p:hover::after{
     transform: scale(1, 1);
 }
 
+/**Animate Center Of Buttons**/
+/**
+nav p::after{
+    transform:scale(0,1);
+    transition: transform 0.3s ease;
+}
 
+nav p:hover::after{
+    transform: scale(1, 1);
+}**/
+/******Nav Button Animation END***********/
+.content_wrapper{
+    display: grid;
+    max-width:1100px;
+    height: 100%;
+    grid-template-columns: repeat(2, minmax(65px, 1fr));
+    grid-template-rows: repeat(6, minmax(65px, auto));
+    margin: 0 auto;
+    border-style: solid;
+    border-width:2px;
+	border-color: #DCF506;
+    padding-left:15px;
+    padding-right: 15px;
+    box-shadow: 0 0 20px black;
+    
+  /**  background:url('../images/fox_02.svg');
+    background-repeat: no-repeat;**/
+}
 
+.fox{
+    width:100%;
+    height:100%;
+    grid-column:2;
+    grid-row:1/4;
+    background-repeat: no-repeat;
+}
 
+/*****MEDIA QUERIES STARTS HERE******/
+@media screen and (max-width:500px) {
+h1{
+    font-size: 60px;
+ }
+}
 
+/*****MEDIA QUERIES STARTS HERE******/
+@media screen and (max-width:400px) {
+h1{
+    font-size: 50px;
+    padding: 0;
+}
+.nav{
+    gap: 3%;
+}
+ 
+.nav a{
+    font-size: 28px;
+ }
+}
 
+/*****MEDIA QUERIES STARTS HERE******/
+@media screen and (max-width:350px) {
+h1{
+    font-size: 50px;
+}
+.nav a{
+    font-size: 20px;
+}
 
+.nav{
+    gap: 0;
+ }
+}
 
+/*****MEDIA QUERIES STARTS HERE******/
+@media screen and (max-width:300px) {
+nav{
+    gap: 0;
+ }
+}
 

@@ -1,0 +1,25 @@
+/***CSS*Gallery*Page***Elemental*Play***/
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading{
+    
+}
+.container .heading h1{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+}
+

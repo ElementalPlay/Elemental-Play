@@ -12,6 +12,7 @@
 📸 Any Images You Have For Your Project Please Upload Them In "images" Folder.
 👉🏽 1️: Add images go to "Add File" tab,  Viola'
 👉🏽 2️: *please label files especially if its just random numbers lol*
+👉🏽 3️: For Logo If You Have SVG's *Scalable Vector Graphic* They're Always Good
 
 ✏️ Literature You Want In Certain Areas U Can Say In Comments, 
     1️: What You'd Like Written & Where etc..
