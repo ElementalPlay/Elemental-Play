@@ -30,7 +30,7 @@ section{
     grid-template-columns: repeat(1, minmax(65px, auto));
     grid-template-rows:auto;
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
     border-style: solid;
     border-radius: 10px;
     border-width: 2px;
@@ -53,13 +53,12 @@ header{
     
 }
 
-header p, h1{
+header p, h1, .nav a{
     display: grid;
     text-align: center;
     align-content: center;
     justify-content: center;
     margin: 0 auto;
-    
 }
 
 p{
@@ -91,14 +90,14 @@ h1{
     display: grid;
     width:100%;
     height:120px;
-    grid-template-columns: repeat(auto-fit, minmax(65px, auto));
+    grid-template-columns: repeat(5, minmax(65px, auto));
     gap: 5%;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
     align-content: center;
     border-style: solid;
-	border-width:3px;
+	border-width:3px 0 3px 0;
 	border-color: #AB7BAB;
     position: relative;
 }
@@ -109,14 +108,20 @@ h1{
     color: #5E285E;
     margin: 0 auto;
     text-decoration: none;
+    /***test code****/
+    font-size: 20px;
+    font-family: sans-serif;
+	text-shadow: 1px 1px 2px #7dabd2;
+    /***test code****/
 }
 
-nav p{
+.nav p{
     width:100%;
     height: 70px;
     margin: 0 auto;
     cursor: pointer;
 }
+
 /**
 nav p:hover{
     width:100%;
@@ -129,7 +134,7 @@ nav p:hover{
 
 /************/
 /******Nav Button Animation Start***********/
-nav p::after{
+nav a::after{
     content: '';
     position:aboslute;
     width: 100%;
@@ -139,15 +144,14 @@ nav p::after{
     background: #ea0e4b;
 }
 
-
 /**Animate Left Of Buttons**/
-nav p::after{
+nav a::after{
     transform:scale(0,1);
     transform-origin: 0% 100%;
     transition: transform 0.3s ease;
 }
 
-nav p:hover::after{
+nav a:hover::after{
     transform: scale(1, 1);
 }
 
@@ -168,13 +172,15 @@ nav p:hover::after{
     height: 100%;
     grid-template-columns: repeat(2, minmax(65px, 1fr));
     grid-template-rows: repeat(6, minmax(65px, auto));
+    grid-template-rows: auto;
     margin: 0 auto;
-    border-style: solid;
+ /**   border-style: solid;
     border-width:2px;
-	border-color: #DCF506;
+	border-color: #DCF506;**/
     padding-left:15px;
     padding-right: 15px;
-    box-shadow: 0 0 20px black;
+   /** box-shadow: 0 0 20px black;**/
+    margin-top: 10px;
     
   /**  background:url('../images/fox_02.svg');
     background-repeat: no-repeat;**/
@@ -211,6 +217,11 @@ h1{
 }
 
 /*****MEDIA QUERIES STARTS HERE******/
+@media screen and (max-width:740px) {
+.nav{
+    gap: 4%;
+}
+}
 @media screen and (max-width:350px) {
 h1{
     font-size: 50px;
