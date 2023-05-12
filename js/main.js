@@ -82,10 +82,10 @@ window.onscroll = function() {
     // make navbar fixed & change logo color
     if (window.pageYOffset > headerSection.offsetHeight - 75) {
         nav.classList.add("active");
-        logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988525/logo-rosa.png";
+        logoImage.src = "/images/erika_blk_white.png";
     } else {
         nav.classList.remove("active");
-        logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png";
+        logoImage.src = "/images/erika_04.png";
     }
 
     // header welcome fade out and in
