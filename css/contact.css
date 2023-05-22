@@ -34,9 +34,10 @@ li{   /*****Home, About, Contact*Buttons********/
 
 h1{ /**Oregon Midwifery Text***/
 	font-size:60px;
-	color:wheat;
-    font-family: Arial, Helvetica, sans-serif;
+	color:#fff;
+    font-family: "Source Code Pro", sans-serif;
     text-shadow: 1px 1px 2px #12181d;
+    font-weight: bold;
 }
 
 .message{  /***Backgound Behind Map Adjustments**********/
@@ -182,3 +183,33 @@ fieldset {
 	height:100%;
 	margin:0 auto;	
 }	
+
+@media screen and (max-width:450px) {
+h1{
+    font-size: 50px;
+}    
+}
+
+@media screen and (max-width:384px) {
+h1{
+    font-size: 40px;
+}    
+}
+
+@media screen and (max-width:300px) {
+h1{
+    font-size: 30px;
+}    
+}
+
+@media screen and (max-width:236px) {
+h1{
+    font-size: 25px;
+}    
+}
+
+@media screen and (max-width:209px) {
+    h1{
+        font-size: 20px;
+    }    
+    }
