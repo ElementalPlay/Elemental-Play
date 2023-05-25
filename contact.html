@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Your Google Analytics Will Go Between Here---Start--->
+   <!--Your Google Analytics Will Go Between Here---END--->
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact Form 2">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+	<!-----Thumbnail Image In Index---Start---------->
+	<link rel="shortcut icon" type="image/png" href="images/pottery_icon.png">
+	<!-----Thumbnail Image In Index----Finish--------->
+  <title>Contact Form & Location Map</title>
+</head>
+<body>
+
+<div class="message">
+	
+<header>
+	<br>
+	<h1>Elemental Play</h1>
+	<br>
+  <nav>
+	  <ul>
+	    <a href="index.html"><li>Home</li></a>
+	    <a href="gallery.html"><li>Gallery</li></a>
+      <a href="contact.html"><li>Contact</li></a>	
+	  <!--  <a href="about.html"><li>About</li></a> -->		
+	  </ul>
+  </nav>		
+</header>
+
+<!--Form-Start---->	
+	
+<section class="googlemap">	
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d736150.233815451!2d-124.43986009271921!3d43.885110977789395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c180058c644705%3A0xdb06c064b0233adc!2sFlorence%2C%20OR%2097439!5e0!3m2!1sen!2sus!4v1574275561017!5m2!1sen!2sus" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>	
+
+</section>	
+	
+<div class="container_messages">  
+  <form id="contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
+
+    <h3>Quick Contact</h3>
+    <h4>Contact us today!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+<!----	  
+    <fieldset>
+      <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+    </fieldset>
+----->
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+    </fieldset>
+	  
+	<div data-netlify-recaptcha="true"></div> <!----Place-where-you-want-captcha-to-be------> 
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+ 
+</div>	
+</div>	
+
+<!--Form-End---->
+	
+	<!-- save this one works
+<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+	<br>
+	<br>
+	<p>
+    <label>Email: <input type="text" name="email" /></label>
+  </p>
+	<br>
+	<br>
+  <p>
+    <label>Message: <textarea name="message" cols="30" rows="10"></textarea></label>
+  </p>
+	<br>
+	<br>
+  <div data-netlify-recaptcha="true"></div>
+  <p>
+	 <br> 
+	  <br>
+    <button type="submit"  >Send</button>
+  </p>
+</form>
+	
+	--->
+
+<!--<script src="js/map.js"></script>---->
+<footer>
+   	
+</footer>	
+	
+</body>	
+</html>
