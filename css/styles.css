@@ -101,6 +101,8 @@ header .text .arrow .left:after, header .text .arrow .right:after, header .text 
 }
 /*End Mutual*/
 
+
+
 /*Start Dots*/
 .dots {
     position: fixed;
@@ -975,6 +977,13 @@ footer .newsletter i {
     font-size: 12px;
 }
 /*End Contact Page*/
+
+
+/***Web Designer Name At Bottom***/
+.CTA a{
+    color:#a96700;
+}
+
 
 /*Start Home Page Responsive*/
 
