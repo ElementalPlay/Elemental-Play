@@ -3,69 +3,164 @@
 	margin: 0;
 	padding: 0;
 } 
-*, *:before, *:after {
-	box-sizing: inherit;
-  }
-  html {
-	font-family: Montserrat, sans-serif;
-	box-sizing: border-box;
-	font-size: 100%;
-	line-height: 1.5;
-	color: #121212;
-  }
-  body {
-   margin: 0 auto;
-   width: 960px;
-   max-width: 100%;
-  }
-  a {
-	color: inherit;
-  }
-  a:hover {
-	text-decoration: none;
-  }
-  h1, h2, h3, h4 {
-	text-transform: uppercase;
-	margin: 0 0 1.5rem;
-  }
-  .logo {
-	width: 150px;
-	border-radius: 50%;
-	margin-bottom: 32px;
-  }
-  .icon-link {
-	transition: 0.3s;
-  }
-  .icon-link:hover {
-	 color:  cadetblue;
-  }
-  .site-title {
-	font-size: calc(36px + 3vw); 
-  }
-  .site-subtitle {
-	font-weight: normal;
-	text-transform: none;
-	font-size: calc(1.5rem + 1vw);
-  }
-  .page-header {
-	margin: 48px 0;
-	text-align: center;
-  }
-  .box {
-	padding: 3rem;
-  }
-  .about,
-  .page-footer {
-	border-top: 1px solid;
-  }
-  .contact {
-	text-align: center;
-	margin: 48px 0;
+
+html {
+	width: 100%;
+	max-height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+	max-height: 100%;
+}
+
+.wrapper{
+	display: grid;
+	max-width: 900px;
+	max-height: 90%;
+	grid-template-columns: repeat(1, minmax(30px, auto));
+    grid-template-rows: 50px 1fr 100px ;
+	grid-gap:1%;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: pink;
+	border: solid;
+	border-width: 10px;
+	border-color: rgb(161, 119, 126);
+	box-shadow: 0 0 10px black;
+}
+  
+header{
+	max-width: 100%;
+	max-height: 100px;
+}
+
+
+/**Nav Bar Holding Main Page Buttons***/
+.nav{ 
+    display: grid;
+    max-width:100%;
+    height:40px;
+    grid-template-columns: repeat(4, minmax(30px, auto));
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 16px;
+    grid-row:2;
+	border-bottom: 3px solid rgb(161, 119, 126);
+	margin-bottom: 10px;
+} 
+ 
+.nav a{
+    text-decoration: none;
+}
+
+.nav p{
+    margin-top: 3px;
+	margin-bottom: 5px;
+	font-size: 22px;
+	text-shadow: 1px 1px 2px #12181d;
 	color: #fff;
-	background: #212121;  
-  }
-  .quote {
-	padding: 4.5rem 0;
+}
+/**
+.box0, .box1, .box2, .box3{
+    border-style: solid;
+	border-width:2px;
+	border-color: #3aad09;
+	margin: 0 auto;
+}
+**/
+/***Adjust Boxes For Nav Buttons******/
+/**
+.box {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+	margin-top: 0 auto;
+	justify-content: center;
+	align-content: center;
+	box-shadow: 0 0 10px black;
+	background-color: #ddd;
+    text-align: center;	
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /** box-shadow: 2px 2px 2px 2px rgb(26, 26, 26);**/
+/**}
+/**
+.box:hover{
+    border-style: solid;
+	background-color: hotpink;
+	border-width:2px;
+	border-color: #DCF506;
+}
+**/
+/****Box*Presses*In*Effect*When*Pressed**Start***/
+/**
+.box:active{
+	height: 30px;
+	width: 30px;
+}**/
+
+.content_grid{
+    display: grid;
+    max-width:900px;
+    max-height:100%;
+    /**grid-template-columns: repeat(2, minmax(30px, auto));**/
+	grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: justify;
+	text-indent: 20px;
+	grid-gap: .5%;
+	
+}
+
+.content_grid p{
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #ddd;
+	color: black;
+	word-spacing: 5px;
+	margin: 0 auto;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.image_01{
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	justify-items: center;
+	align-items: center;
+}
+
+.description_02{
+	grid-row: 2;
+}
+
+img{
+	display: grid;
+	max-width: 96%;
+	max-height: 96%;
+	margin: 0 auto;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	border-style: solid;
+	border-width: 3px;
+	box-shadow: 0 0 10px black;
+}
+
+.footer{
+	width: 100%;
+	max-height: 80px;
+	border-top: 3px solid rgb(161, 119, 126);
 	text-align: center;
-	background:  url(https://unsplash.it/1200/800?image=354) no-repeat;
-  }  
+	margin: 0 auto;
+}
