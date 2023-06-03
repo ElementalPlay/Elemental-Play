@@ -1,7 +1,7 @@
 # Elemental_Play
 ⭐PLEASE READ BELOW FOR INSTRUCTIONS⭐
 
-👉🏽 Watch Site Live While Working https://geoffstengel.github.io/Elemental_Play/
+👉🏽 Watch Site Live While Working https://ElementalPlay.net/
 
 💡 Steps On How To Get Around Folders
 
